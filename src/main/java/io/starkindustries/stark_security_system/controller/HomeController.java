@@ -4,7 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-@Controller
+@RestController
+@RequestMapping(path= "api/v1/home")
 public class HomeController {
 
     @GetMapping("/")
